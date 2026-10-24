@@ -19,3 +19,18 @@ testado em duas configurações: com e sem o cluster label como feature adiciona
 IEEE-CIS Fraud Detection — Kaggle (590k transações, 394 features)
 
 ## Estrutura
+
+fraud-behavior-clustering/
+├── codigo/
+│ └── feature_engineer.ipynb
+├── dados/ # CSVs não versionados — baixar via Kaggle
+├── output/
+└── README.md
+
+
+## Resultado
+
+| Abordagem | AUC-PR |
+|---|---|
+| Features comportamentais (sem cluster) | 0.1400 |
+| Features comportamentais + cluster label | 0.1423 |
